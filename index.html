@@ -246,7 +246,7 @@
                     <h3 class="section-title">Referral Details</h3>
                     <div class="form-group">
                         <label class="form-label">Referring To (Doctor Name)</label>
-                        <input type="text" id="doctorName" class="form-input" placeholder="John Holt" oninput="updatePreview()">
+                        <input type="text" id="doctorName" class="form-input" placeholder="John" oninput="updatePreview()">
                     </div>
                     <div class="grid-2">
                         <div class="form-group">
@@ -417,7 +417,7 @@
             const lbl = document.getElementById('patientNameLabel');
             const inp = document.getElementById('patientName');
             if (lt==='freetext') { lbl.textContent='Subject'; inp.placeholder='e.g. Request for Information'; }
-            else { lbl.textContent='Patient Name'; inp.placeholder='e.g. David Dominguez'; }
+            else { lbl.textContent='Patient Name'; inp.placeholder='e.g. David'; }
         }
         function updatePreview() {
             updateLetterTypeFields();
